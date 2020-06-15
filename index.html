@@ -9,17 +9,24 @@
 <body>
     <div>
         <header>
-            <h2 class="high-scores" id="high-scores">View High Scores</h2>
+            <h2 id="high-scores">View High Scores</h2>
             <div>Time: <span id="countdown">60</span></div>
         </header>
-        <div class="containter">
-            <main id="content">
-                <div class="start" id="start">
-                    <h1>Coding Quiz</h1>
-                    <p>Try to answer the following coding related questions within the time limit. Keep in mind that incorrect answers will time by ten seconds!</p>
-                    <button id="start-quiz" class="btn">Start Quiz</button>
+        <div id="container">
+            <div id="start">
+                <h1>Coding Quiz</h1>
+                <p>Try to answer the following coding related questions within the time limit.</p>
+                <button id="start-quiz" class="btn">Start Quiz</button>
+            </div>
+            <div id="quiz"></div>
+                <div id="question">
+                <div id="options">
+                    <div class="options" id="A" onclick="checkAnswer('A')"></div>
+                    <div class="options" id="B" onclick="checkAnswer('B')"></div>
+                    <div class="options" id="C" onclick="checkAnswer('C')"></div>
+                    <div class="options" id="D" onclick="checkAnswer('D')"></div>
                 </div>
-            </main>
+            </div>
         </div>
     </div>
     
